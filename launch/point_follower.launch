@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="PD_follower" type="vel_handler.py" name="vel_handler_node" output="screen" />
+    <node pkg="PD_follower" type="marker_publisher.py" name="marker_node" output="screen" />
+    <node pkg="PD_follower" type="move_robot.py" name="pose_follower_node" output="screen" />
+</launch>
